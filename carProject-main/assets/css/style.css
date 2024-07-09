@@ -1,0 +1,200 @@
+/*Reset csss*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.title{
+    font-family: "Oswald", sans-serif;
+}
+
+.inner{
+    width: 80%;
+    margin: auto;
+}
+
+.first-section{
+    border-bottom: 1px solid #000;
+}
+.first-section-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    height: 70px;
+}
+.menu-icon{
+    width: 30px;
+    height: 30px;
+}
+
+/*Second section*/
+
+
+
+.second-sec-img,.second-sec-content{
+    width: 100%;
+}
+
+.second-section-inner{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 600px;
+}
+
+.second-sec-content{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.second-sec-title{
+    font-size: 52px;
+}
+.second-sec-text{
+    font-size: 14px;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+
+
+/*Third section*/
+
+.third-sec-img,.fourth-sec-img{
+    width: 50%;
+}
+
+.third-section,.fourth-section{
+    padding: 50px 0;
+    display: flex;
+    align-items: start;
+    gap: 50px;
+}
+.third-sec-content,.fourth-sec-content{
+    position: relative;
+    width: 30%;
+}
+.third-sec-content-icon{
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 120px;
+    z-index: 0;
+}
+.third-sec-elements{
+    z-index: 1;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+.third-sec-elements h3,.fourth-sec-elements h3{
+    font-size: 25px;
+}
+.third-sec-elements p{
+    padding: 20px 0 20px 30px;
+    font-size: 14px;
+    line-height: 25px;
+    font-style: italic;
+    font-weight: 400;
+}
+.fourth-sec-elements p{
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: 400;
+}
+.fourth-sec-elements{
+    padding-right: 60px;
+}
+
+.third-section .learn-btn{
+    background-image: linear-gradient(to right, #84abec, #cf84fb);
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-left: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/*Fourth Section*/
+
+.fourth-section .learn-btn{
+    background: #000;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 20px;
+    display: block;
+    width: max-content;
+}
+
+.fourth-section{
+    justify-content: end;
+}
+
+
+/*Responsive*/
+
+@media(max-width:768px){
+    .logo{
+        display: none;
+    }
+    .first-section-inner{
+        justify-content: end;
+    }
+    .second-section-inner{
+        width: 90%;
+    }
+    .second-sec-title{
+        font-size: 28px;
+    }
+    .third-section,.fourth-section{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .third-sec-img,.third-sec-content,.fourth-sec-img,.fourth-sec-content{
+        width: 90%;
+    }
+    .third-sec-elements{
+        position: relative;
+        left: 0;
+    }
+    .logo-mobile{
+        display: block;
+        width: 100px;
+        height: 70px;
+        margin: auto;
+    }
+}
+@media(min-width:769px) and (max-width:1024px){
+    .third-sec-elements{
+        left: 0;
+        top: 0;
+    }
+}
+@media(min-width:769px){
+    .logo-mobile{
+        display: none;
+    }
+}
